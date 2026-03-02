@@ -4,27 +4,43 @@ import EventCard from '../components/EventCard';
 import { Search, Map as MapIcon, SlidersHorizontal, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+
 const Home = () => {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const categories = ["All", "Technology", "Music", "Workshop", "Meetup"];
+  const categories = ["All", "Technology", "Music", "Workshop", "Meetup", "Cultural", "Sports"];
 
   // Logic: Filter by Search Text AND Selected Category
-  const filteredEvents = events.filter(e => {
-    const matchesSearch = e.title.toLowerCase().includes(search.toLowerCase()) || 
-                         e.category.toLowerCase().includes(search.toLowerCase());
-    const matchesCategory = activeCategory === "All" || e.category === activeCategory;
+  // const filteredEvents = events.filter(e => {
+  //   const matchesSearch = e.title.toLowerCase().includes(search.toLowerCase()) || 
+  //                        e.category.toLowerCase().includes(search.toLowerCase());
+  //   const matchesCategory = activeCategory === "All" || e.category === activeCategory;
     
-    return matchesSearch && matchesCategory;
-  });
+  //   return matchesSearch && matchesCategory;
+  // });
+  
+const filteredEvents = events.filter(e => {
+  const searchText = search.toLowerCase();
+
+  const matchesSearch = 
+    e.title.toLowerCase().includes(searchText) || 
+    e.category.toLowerCase().includes(searchText) || 
+    (e.location && e.location.toLowerCase().includes(searchText)) || // സ്ഥലത്തിന്റെ പേര്
+    (e.organizer && e.organizer.toLowerCase().includes(searchText));  // സംഘാടകന്റെ പേര്
+
+  const matchesCategory = activeCategory === "All" || e.category === activeCategory;
+  
+  return matchesSearch && matchesCategory;
+});
+
 
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
       {/* 1. Hero Section with AI Branding */}
       <div className="bg-slate-900 h-[450px] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
         {/* Subtle Background Pattern */}
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
+        {/* <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div> */}
         
         <div className="relative z-10 animate-in fade-in zoom-in duration-700">
           <div className="flex justify-center mb-4">

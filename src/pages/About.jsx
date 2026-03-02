@@ -1,17 +1,17 @@
 import React from 'react';
-import { Target, Sparkles, Map, ShieldCheck, Mail, Github, Twitter } from 'lucide-react';
+import { Target, Sparkles, Map, ShieldCheck, Mail,} from 'lucide-react';
 
 const About = () => {
   const features = [
     {
       icon: <Sparkles className="text-indigo-600" />,
-      title: "AI Recommendations",
+      title: "Recommendations",
       desc: "Our smart engine learns your interests to suggest workshops and meetups you'll actually love."
     },
     {
       icon: <Map className="text-indigo-600" />,
       title: "Location Aware",
-      desc: "Find events exactly where you are. From Fort Kochi to Infopark, we've got the city covered."
+      desc: "Find events exactly where you are, we've got the city covered."
     },
     {
       icon: <ShieldCheck className="text-indigo-600" />,

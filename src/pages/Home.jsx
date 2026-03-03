@@ -73,11 +73,11 @@ const filteredEvents = events.filter(e => {
               onChange={(e) => setSearch(e.target.value)}
             />
           </div>
-          <div className="flex items-center gap-3 w-full md:w-auto">
+          {/* <div className="flex items-center gap-3 w-full md:w-auto">
             <Link to="/map" className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-slate-50 text-slate-700 px-8 py-4 rounded-2xl hover:bg-slate-100 transition font-bold border border-gray-100">
               <MapIcon size={20} /> Map
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 

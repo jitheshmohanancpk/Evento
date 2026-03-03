@@ -21,10 +21,10 @@ import EditProfile from './pages/EditProfile';
 import OrganizerDashboard from './pages/Organizer/OrganizerDashboard';
 import Login from './pages/Login';
 import SavedEvents from './pages/SavedEvents';
-// import OrganizerDetails from './pages/OrganizerDetails';
 import OrganizersDetails from "./pages/OrganizersDetails";
 import Emailer from './pages/Emailer'
 import BookingSuccess from './pages/BookingSuccess';
+
 
 // const About = () => <div className="p-20 text-center text-2xl font-bold text-slate-800">About Evento</div>;
 
@@ -36,7 +36,7 @@ const RootLayout = () => {
       <main>
         <Outlet /> 
       </main>
-      
+      <Footer />
     </div>
   );
 };
@@ -64,7 +64,8 @@ const router = createBrowserRouter([
       { path: "saved-events", element: <SavedEvents />},
       { path: "organizer/:id", element: <OrganizersDetails/> },
       { path: "Emailer", element: <Emailer />},
-      { path: "BookingSuccess", element: <BookingSuccess />}
+      { path: "booking-success", element: <BookingSuccess />}
+      
     
     ],
   },

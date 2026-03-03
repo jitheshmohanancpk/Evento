@@ -42,8 +42,8 @@ const Emailer = () => {
     };
 
     emailjs.send(
-      'service_cj0t8xl',      // Your Service ID
-      'YOUR_TEMPLATE_ID',     // പകരമായി നിങ്ങളുടെ Template ID ഇവിടെ നൽകുക
+      'service_eqteg6e',      // Your Service ID
+      'template_6ay6j2n',     // പകരമായി നിങ്ങളുടെ Template ID ഇവിടെ നൽകുക
       templateParams,
       'zxa-RvNNX1CmjQCsi'     // Your Public Key
     )

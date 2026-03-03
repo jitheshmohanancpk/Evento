@@ -8,6 +8,7 @@ const BookingSuccess = () => {
   
   // മുമ്പത്തെ പേജിൽ നിന്ന് വരുന്ന ഡാറ്റ
   const { eventTitle, ticketNumber, totalRate, fullName, phone, email } = location.state || {};
+  
 
   if (!fullName) return <div className="p-20 text-center">No Booking Found!</div>;
 

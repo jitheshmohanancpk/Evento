@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Twitter, Linkedin, Github, Mail, Send, Sparkles } from 'lucide-react';
 
+
 const Footer = () => {
   return (
     <footer className="bg-slate-900 text-white pt-20 pb-10 px-6 relative">
@@ -13,7 +14,7 @@ const Footer = () => {
             <h2 className="text-3xl font-black mb-2">Stay with Evento!</h2>
             <p className="text-indigo-100 font-medium">Get the latest event updates directly in your inbox.</p>
           </div>
-          <div className="w-full md:w-auto flex items-center bg-white/10 p-2 rounded-2xl backdrop-blur-md relative z-10">
+          {/* <div className="w-full md:w-auto flex items-center bg-white/10 p-2 rounded-2xl backdrop-blur-md relative z-10">
             <input 
               type="email" 
               placeholder="yourname@mail.com" 
@@ -22,7 +23,7 @@ const Footer = () => {
             <button className="bg-white text-indigo-600 p-3 rounded-xl hover:bg-indigo-50 transition shadow-lg">
               <Send size={20} />
             </button>
-          </div>
+          </div> */}
           {/* Decorative Circle */}
           <div className="absolute -right-20 -top-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
         </div>
@@ -53,10 +54,10 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-black uppercase tracking-widest text-slate-500 mb-6">Platform</h3>
             <ul className="space-y-4 font-bold text-slate-300">
-              <li><Link to="/" className="hover:text-indigo-400 transition">Browse Events</Link></li>
-              <li><Link to="/organizers" className="hover:text-indigo-400 transition">Organizers</Link></li>
-              <li><Link to="/venues" className="hover:text-indigo-400 transition">Venues</Link></li>
-              <li><Link to="/gallery" className="hover:text-indigo-400 transition">Gallery</Link></li>
+              <li><Link to="/Events" className="hover:text-indigo-400 transition">Events</Link></li>
+              <li><Link to="/Organizers" className="hover:text-indigo-400 transition">Organizers</Link></li>
+              <li><Link to="/Venues" className="hover:text-indigo-400 transition">Venues</Link></li>
+              <li><Link to="/Gallery" className="hover:text-indigo-400 transition">Gallery</Link></li>
             </ul>
           </div>
 
@@ -64,10 +65,10 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-black uppercase tracking-widest text-slate-500 mb-6">Company</h3>
             <ul className="space-y-4 font-bold text-slate-300">
-              <li><Link to="/about" className="hover:text-indigo-400 transition">About Us</Link></li>
-              <li><Link to="/contact" className="hover:text-indigo-400 transition">Contact</Link></li>
-              <li><Link to="/careers" className="hover:text-indigo-400 transition">Careers</Link></li>
-              <li><Link to="/privacy" className="hover:text-indigo-400 transition">Privacy Policy</Link></li>
+              <li><Link to="/About" className="hover:text-indigo-400 transition">About Us</Link></li>
+              <li><Link to="/Contact" className="hover:text-indigo-400 transition">Contact</Link></li>
+              {/* <li><Link to="/careers" className="hover:text-indigo-400 transition">Careers</Link></li>
+              <li><Link to="/privacy" className="hover:text-indigo-400 transition">Privacy Policy</Link></li> */}
             </ul>
           </div>
 

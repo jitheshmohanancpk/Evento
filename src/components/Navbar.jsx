@@ -109,7 +109,13 @@ useEffect(() => {
       {isOpen && (
         <div className="lg:hidden bg-white border-t border-gray-100 p-6 space-y-4">
           <Link to="/Events" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>EVENTS</Link>
-          <Link to="/about" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>ABOUT</Link>
+         
+          <Link to="/Venues" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>VENUES</Link>
+          <Link to="/Organizers" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>ORGANIZERS</Link>
+           <Link to="/about" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>ABOUT</Link>
+           <Link to="/Gallery" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>GALLERY</Link>
+           <Link to="/Contact" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>CONTACT</Link>
+           <Link to="/saved-events" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>SAVED</Link>
           <hr />
           {isLoggedIn ? (
             <div className="flex items-center justify-between pt-2">

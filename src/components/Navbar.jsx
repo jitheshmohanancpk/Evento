@@ -54,7 +54,7 @@ useEffect(() => {
           <Link to="/Events" className={isActive('/Events') ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600 transition'}>EVENTS</Link>
           <Link to="/Venues" className={isActive('/Venues') ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600 transition'}>VENUES</Link>
           <Link to="/Organizers" className={isActive('/Organizers') ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600 transition'}>ORGANIZERS</Link>
-          <Link to="/about" className={isActive('/about') ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600 transition'}>ABOUT</Link>
+          <Link to="/About" className={isActive('/about') ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600 transition'}>ABOUT</Link>
           <Link to="/Gallery" className={isActive('/Gallery') ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600 transition'}>GALLERY</Link>
           <Link to="/Contact" className={isActive('/Contact') ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600 transition'}>CONTACT</Link>
           {/* <Link to="/SavedEvents" className={isActive('/SavedEvents') ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600 transition'}>SavedEvents</Link> */}
@@ -112,7 +112,7 @@ useEffect(() => {
          
           <Link to="/Venues" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>VENUES</Link>
           <Link to="/Organizers" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>ORGANIZERS</Link>
-           <Link to="/about" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>ABOUT</Link>
+           <Link to="/About" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>ABOUT</Link>
            <Link to="/Gallery" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>GALLERY</Link>
            <Link to="/Contact" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>CONTACT</Link>
            <Link to="/saved-events" className="block font-bold text-slate-600" onClick={() => setIsOpen(false)}>SAVED</Link>

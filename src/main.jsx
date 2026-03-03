@@ -58,7 +58,7 @@ const router = createBrowserRouter([
       { path: "booking/:id", element: <Booking /> },
       // { path: "SignUp", element: <SignUp.jsx /> },
       { path: "EditProfile", element: <EditProfile />},
-      { path: "/signup",element: <SignUp />},
+      { path: "signup",element: <SignUp />},
       { path: "OrganizerDashboard",element: <OrganizerDashboard/>},
       { path: "Login", element: <Login />},
       { path: "saved-events", element: <SavedEvents />},
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
     
     ],
   },
-  
+
 ],
 {
   basename: "/Evento"

@@ -69,6 +69,11 @@ const router = createBrowserRouter([
     
     ],
   },
+
+{
+  basename: "/Evento"
+}
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

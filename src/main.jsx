@@ -69,12 +69,11 @@ const router = createBrowserRouter([
     
     ],
   },
-
+  
+],
 {
   basename: "/Evento"
-}
-
-]);
+});
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
